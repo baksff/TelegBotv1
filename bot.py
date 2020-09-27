@@ -3,8 +3,7 @@ import config
 import urllib.request
 
 
-bot = telebot.TeleBot(token)
-token = '1260194721:AAHH0lqh43DAh9nc-bbicz6W-BXrrOJBuaA'
+bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
